@@ -49,17 +49,11 @@
       list-style-position: inside;
       margin-left: 20px;
     }
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      margin-top: 60px;
-      color: #aaa;
-    }
-    /* Οικονομικά στοιχεία τώρα μέσα στο ίδιο section με τα What We Offer */
     .finance {
       font-size: 0.75rem;
       color: #aaa;
-      margin-top: 20px;
+      max-width: 800px; /* ίδιο πλάτος με section */
+      margin: 120px auto 60px; /* πιο κάτω, αλλά όχι στο footer */
       text-align: left;
     }
     .finance h2 {
@@ -80,6 +74,13 @@
     }
     a.file-link:hover {
       text-decoration: underline;
+    }
+    footer {
+      text-align: left; /* παραμένει στο ίδιο πλάτος με τα sections */
+      max-width: 800px;
+      margin: 0 auto 40px;
+      font-size: 0.9em;
+      color: #aaa;
     }
   </style>
 </head>
@@ -103,14 +104,14 @@
         <li>Formal Interconnectivity Verification</li> 
         <li>Proven experience in SPI-based chips & Arm-Core multi-IP platforms</li> 
       </ul> 
+    </section>
 
-      <div class="finance">
-        <h2>Οικονομικά στοιχεία εταιρείας</h2>
-        <ul>
-          <li>📄 <a class="file-link" href="myfile2025.pdf" target="_blank">Αρχείο 2025</a></li>
-          <li>📄 <a class="file-link" href="myfile2024.pdf" target="_blank">Αρχείο 2024</a></li>
-        </ul>
-      </div>
+    <section class="finance">
+      <h2>Οικονομικά στοιχεία εταιρείας</h2>
+      <ul>
+        <li>📄 <a class="file-link" href="myfile2025.pdf" target="_blank">Αρχείο 2025</a></li>
+        <li>📄 <a class="file-link" href="myfile2024.pdf" target="_blank">Αρχείο 2024</a></li>
+      </ul>
     </section>
 
     <footer>© 2025 VAKERLIS MIKE — All Rights Reserved.</footer>
