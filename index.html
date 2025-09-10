@@ -9,16 +9,14 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #e0e0e0;
       background: url('bg-chip.jpg') center/cover fixed no-repeat;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
     }
     .overlay {
       background: rgba(0,0,0,0.7);
-      flex: 1;
+      min-height: 100vh;
+      padding: 40px 20px;
       display: flex;
       flex-direction: column;
-      padding: 40px 20px;
+      justify-content: flex-start;
     }
     header {
       text-align: center;
@@ -51,12 +49,18 @@
       list-style-position: inside;
       margin-left: 20px;
     }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 60px;
+      color: #aaa;
+    }
+    /* Οικονομικά στοιχεία μέσα στο ίδιο section με τα What We Offer */
     .finance {
       font-size: 0.75rem;
       color: #aaa;
-      max-width: 800px; /* ίδιο με section */
-      margin: auto 0 0 0; /* σπρώχνει στο τέλος */
-      text-align: left; /* αριστερά στο ίδιο container */
+      margin-top: 60px; /* αυξήθηκε για περισσότερες κενές γραμμές πάνω */
+      text-align: left;
     }
     .finance h2 {
       font-size: 1em;
@@ -76,13 +80,6 @@
     }
     a.file-link:hover {
       text-decoration: underline;
-    }
-    footer {
-      text-align: left;
-      max-width: 800px;
-      margin: 20px auto 20px;
-      font-size: 0.9em;
-      color: #aaa;
     }
   </style>
 </head>
@@ -106,17 +103,8 @@
         <li>Formal Interconnectivity Verification</li> 
         <li>Proven experience in SPI-based chips & Arm-Core multi-IP platforms</li> 
       </ul> 
-    </section>
 
-    <section class="finance">
-      <h2>Οικονομικά στοιχεία εταιρείας</h2>
-      <ul>
-        <li>📄 <a class="file-link" href="myfile2025.pdf" target="_blank">Αρχείο 2025</a></li>
-        <li>📄 <a class="file-link" href="myfile2024.pdf" target="_blank">Αρχείο 2024</a></li>
-      </ul>
-    </section>
-
-    <footer>© 2025 VAKERLIS MIKE — All Rights Reserved.</footer>
-  </div>
-</body>
-</html>
+      <div class="finance">
+        <h2>Οικονομικά στοιχεία εταιρείας</h2>
+        <ul>
+          <li>📄 <a class="file-link" href="myfile2025.pdf" target="_blank">Αρχείο 2025</a></l_
