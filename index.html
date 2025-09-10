@@ -1,130 +1,117 @@
 <!DOCTYPE html>
-<html lang="el">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>VAKERLIS MIKE - Functional UVM Verification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VAKERLIS MIKE</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)),
+                  url('chip-background.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #e0e0e0;
-      background: url('bg-chip.jpg') center/cover fixed no-repeat;
-    }
-    .overlay {
-      background: rgba(0,0,0,0.7);
-      min-height: 100vh;
-      padding: 40px 20px;
     }
     header {
       text-align: center;
-      margin-bottom: 40px;
+      padding: 3rem 1rem;
+      background: rgba(0,0,0,0.6);
     }
     header h1 {
-      font-size: 3.2em;
+      font-size: 2.5rem;
       margin: 0;
-      color: #ffcc00;
-    }
-    header p {
-      font-size: 1.6em;
-      font-weight: bold;
-      color: #ffdd33;
-      margin-top: 10px;
+      color: #00c8ff;
     }
     section {
-      max-width: 800px;
-      margin: 0 auto 60px;
-      line-height: 1.6;
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: rgba(20,20,20,0.85);
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.8);
     }
-    h2 {
-      color: #ffcc00;
-      font-size: 2em;
-      border-bottom: 2px solid #ffcc00;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #00c8ff;
+      border-bottom: 2px solid #00c8ff;
+      display: inline-block;
+      padding-bottom: 0.3rem;
     }
     ul {
-      list-style-position: inside;
-      margin-left: 20px;
+      list-style: none;
+      padding: 0;
     }
-    .project {
-      margin-bottom: 30px;
-      padding: 20px;
-      background: rgba(50,50,50,0.6);
-      border-radius: 8px;
+    ul li {
+      margin: 0.8rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #00ff99;
     }
     footer {
       text-align: center;
-      font-size: 0.9em;
-      margin-top: 60px;
+      padding: 1rem;
+      font-size: 0.8rem;
+      background: rgba(0,0,0,0.6);
+      margin-top: 2rem;
+    }
+    .small-section {
+      font-size: 0.85rem;
       color: #aaa;
     }
-    /* Μικρότερη εμφάνιση για Οικονομικά Στοιχεία */
-    .finance h2 {
-      font-size: 1em;
-      color: #bbb;
-      border-bottom: 1px solid #555;
+    .file-list {
+      margin-top: 0.5rem;
+      padding-left: 1.5rem;
     }
-    .finance ul {
-      font-size: 0.8em;
-      color: #ccc;
-    }
-    a.file-link {
-      color: #ffcc00;
-      text-decoration: none;
-    }
-    a.file-link:hover {
-      text-decoration: underline;
+    .file-list li::before {
+      content: "📄";
+      color: #00c8ff;
+      position: absolute;
+      left: 0;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <header>
-      <h1>VAKERLIS MIKE</h1>
-      <p>Functional Verification Services</p>
-    </header>
 
-    <section>
-      <h2>What We Offer</h2>
-      <p>We specialize in:</p>
-      <ul>
-        <li>UVM Testbench components development, integration & maintenance (C/SV)</li>
-        <li>VIP development, integration & debugging</li>
-        <li>Verification planning (VPlan) & regression for functional & code coverage</li>
-        <li>GLS analysis, SVAs, and constrained-random tests/sequences development</li>
-      </ul>
-    </section>
+  <header>
+    <h1>VAKERLIS SINGLE MEMBER P.C.</h1>
+    <p>Functional Verification Services</p>
+  </header>
 
-    <section>
-      <h2>Recent Projects</h2>
-      <div class="project">
-        <h3>Test-chip with SPI Interface</h3>
-        <ul>
-          <li>SV UVM TB development with SPI VIP & SPI reg UVC integration.</li>
-          <li>Functional & code coverage closure; test development & regression analyses.</li>
-          <li>GLS for min/max sdf timing violations; SVA, callbacks, SCBD, RGM via ECB, vplan, and RTL bug fixes.</li>
-        </ul>
-      </div>
-      <div class="project">
-        <h3>Arm-Core Platform</h3>
-        <ul>
-          <li>Integration lead for PMU, SCU, OSC IPs.</li>
-          <li>SV & C testcases in C/UVM-SV TB across multiple boot flows.</li>
-          <li>SV/C API sequences, JAMA & vPlan docs, SVAs, Clearcase specs.</li>
-          <li>Platform integration, reusability enhancements, and ARM-to-RISCV CPU replacement involvement.</li>
-        </ul>
-      </div>
-    </section>
+  <section>
+    <h2>What we offer</h2>
+    <ul>
+      <li><strong>UVM Testbench components development, integration & maintenance</strong></li>
+      <li><strong>VIP development, integration & debugging</strong></li>
+      <li><strong>Functional & code coverage regression analysis</strong></li>
+      <li><strong>Constrained-random test and sequence development</strong></li>
+      <li><strong>SystemVerilog Assertions (SVAs) implementation</strong></li>
+      <li><strong>Gate-level simulation (GLS) & timing analysis</strong></li>
+      <li><strong>Formal Interconnectivity Verification</strong></li>
+      <li><strong>Proven experience in SPI-based chips & Arm-Core multi-IP platforms</strong></li>
+    </ul>
+  </section>
 
-    <section class="finance">
-      <h2>Οικονομικά στοιχεία εταιρείας</h2>
-      <ul>
-        <li>📄 <a class="file-link" href="myfile2025.pdf" target="_blank">Αρχείο 2025</a></li>
-        <li>📄 <a class="file-link" href="myfile2024.pdf" target="_blank">Αρχείο 2024</a></li>
-      </ul>
-    </section>
+  <section class="small-section" style="margin-top: 5rem;">
+    <h2>Οικονομικά στοιχεία εταιρείας</h2>
+    <p>Εδώ μπορείτε να βρείτε παραδείγματα οικονομικών στοιχείων και αρχεία που ανεβάζει η εταιρεία σε τακτική βάση, όπως:</p>
+    <ul class="file-list">
+      <li>example-financial-report-2024.pdf</li>
+      <li>example-income-statement.xlsx</li>
+      <li>example-budget-plan.docx</li>
+    </ul>
+    <p>Μπορείτε να αντικαταστήσετε αυτά τα παραδείγματα με τα δικά σας αρχεία.</p>
+  </section>
 
-    <footer>© 2025 VAKERLIS MIKE. All Rights Reserved.</footer>
-  </div>
+  <footer>
+    &copy; 2025 VAKERLIS MIKE — All rights reserved.
+  </footer>
+
 </body>
 </html>
