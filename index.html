@@ -1,10 +1,8 @@
-
-   
 <!DOCTYPE html>
 <html lang="el">
 <head>
   <meta charset="UTF-8">
-  <title>My Company - Functional UVM Verification</title>
+  <title>VAKERLIS MIKE - Functional Verification Services</title>
   <style>
     body {
       margin: 0;
@@ -16,15 +14,24 @@
       background: rgba(0,0,0,0.7);
       min-height: 100vh;
       padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
     }
     header {
       text-align: center;
       margin-bottom: 40px;
     }
     header h1 {
-      font-size: 3em;
+      font-size: 3.2em;
       margin: 0;
       color: #ffcc00;
+    }
+    header p {
+      font-size: 1.6em;
+      font-weight: bold;
+      color: #ffdd33;
+      margin-top: 10px;
     }
     section {
       max-width: 800px;
@@ -42,17 +49,31 @@
       list-style-position: inside;
       margin-left: 20px;
     }
-    .project {
-      margin-bottom: 30px;
-      padding: 20px;
-      background: rgba(50,50,50,0.6);
-      border-radius: 8px;
-    }
     footer {
       text-align: center;
       font-size: 0.9em;
       margin-top: 60px;
       color: #aaa;
+    }
+    /* Οικονομικά στοιχεία σε ίδια στοίχιση με sections */
+    .finance {
+      font-size: 0.75rem;
+      color: #aaa;
+      max-width: 800px; /* ίδιο με section */
+      margin: 8rem auto 0; /* χαμηλά, κεντραρισμένο με το κύριο περιεχόμενο */
+      text-align: left; /* αριστερά μέσα στο container */
+    }
+    .finance h2 {
+      font-size: 1em;
+      color: #bbb;
+      border-bottom: 1px solid #555;
+      padding-bottom: 3px;
+      margin-bottom: 5px;
+    }
+    .finance ul {
+      font-size: 0.75rem;
+      color: #ccc;
+      padding-left: 20px;
     }
     a.file-link {
       color: #ffcc00;
@@ -66,30 +87,34 @@
 <body>
   <div class="overlay">
     <header>
-      <h1>My Company Name</h1>
-      <p>Module/SoC Functional UVM Verification Services</p>
+      <h1>VAKERLIS MIKE</h1>
+      <p>Module/SoC Functional Verification Services</p>
     </header>
 
     <section>
       <h2>What We Offer</h2>
       <p>We specialize in:</p>
       <ul>
-        <li>UVM Testbench components development, integration & maintenance (C/SV)</li>
-        <li>VIP development, integration & debugging</li>
-        <li>Verification planning (VPlan) & regression for functional & code coverage</li>
-        <li>GLS analysis, SVAs, and constrained-random tests/sequences development</li>
-      </ul>
+        <li>UVM Testbench components development, integration & maintenance</li> 
+        <li>VIP development, integration & debugging</li> 
+        <li>Functional & code coverage regression analysis</li> 
+        <li>Constrained-random test and sequence development</li> 
+        <li>SystemVerilog Assertions (SVAs) implementation</li> 
+        <li>Gate-level simulation (GLS) & timing analysis</li> 
+        <li>Formal Interconnectivity Verification</li> 
+        <li>Proven experience in SPI-based chips & Arm-Core multi-IP platforms</li> 
+      </ul> 
     </section>
- <section> 
-      <h2>Downloadable Files</h2>
+
+    <section class="finance">
+      <h2>Οικονομικά στοιχεία εταιρείας</h2>
       <ul>
         <li>📄 <a class="file-link" href="myfile2025.pdf" target="_blank">Αρχείο 2025</a></li>
         <li>📄 <a class="file-link" href="myfile2024.pdf" target="_blank">Αρχείο 2024</a></li>
-        <!-- Προσθήκη νέων αρχείων -->
       </ul>
     </section>
 
-    <footer>© 2025 My Company Name. All Rights Reserved.</footer>
+    <footer>© 2025 VAKERLIS MIKE — All Rights Reserved.</footer>
   </div>
 </body>
 </html>
