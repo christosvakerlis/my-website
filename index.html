@@ -1,118 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VAKERLIS MIKE</title>
+  <title>My Company - Functional UVM Verification</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)),
-                  url('chip-bg-dark.jpg') no-repeat center center fixed;
-      background-size: cover;
       color: #e0e0e0;
+      background: url('bg-chip.jpg') center/cover fixed no-repeat;
+    }
+    .overlay {
+      background: rgba(0,0,0,0.7);
+      min-height: 100vh;
+      padding: 40px 20px;
     }
     header {
       text-align: center;
-      padding: 3rem 1rem;
-      background: rgba(0,0,0,0.6);
+      margin-bottom: 40px;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3.2em;
       margin: 0;
-      color: #00c8ff;
+      color: #ffcc00;
+    }
+    header p {
+      font-size: 1.6em;
+      font-weight: bold;
+      color: #ffdd33;
+      margin-top: 10px;
     }
     section {
-      max-width: 1000px;
-      margin: 3rem auto;
-      padding: 2rem;
-      background: rgba(20,20,20,0.85);
-      border-radius: 16px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.8);
+      max-width: 800px;
+      margin: 0 auto 60px;
+      line-height: 1.6;
     }
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      color: #00c8ff;
-      border-bottom: 2px solid #00c8ff;
-      display: inline-block;
-      padding-bottom: 0.3rem;
+    h2 {
+      color: #ffcc00;
+      font-size: 2em;
+      border-bottom: 2px solid #ffcc00;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
     }
     ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      margin: 0.8rem 0;
-      padding-left: 1.5rem;
-      position: relative;
-    }
-    ul li::before {
-      content: "✔";
-      position: absolute;
-      left: 0;
-      color: #00ff99;
+      list-style-position: inside;
+      margin-left: 20px;
     }
     footer {
       text-align: center;
-      padding: 1rem;
-      font-size: 0.8rem;
-      background: rgba(0,0,0,0.6);
-      margin-top: 2rem;
-    }
-    .small-section {
-      font-size: 0.75rem; /* πιο μικρά γράμματα */
+      font-size: 0.9em;
+      margin-top: 60px;
       color: #aaa;
-      margin-top: 5rem; /* πιο χαμηλά */
     }
-    .file-list {
-      margin-top: 0.5rem;
-      padding-left: 1.5rem;
+    /* Μικρότερη εμφάνιση για Οικονομικά Στοιχεία */
+    .finance h2 {
+      font-size: 1em;
+      color: #bbb;
+      border-bottom: 1px solid #555;
     }
-    .file-list li::before {
-      content: "📄";
-      color: #00c8ff;
-      position: absolute;
-      left: 0;
+    .finance ul {
+      font-size: 0.8em;
+      color: #ccc;
+    }
+    a.file-link {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+    a.file-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+  <div class="overlay">
+    <header>
+      <h1>My Company Name</h1>
+      <p>Module/SoC Functional Verification Services</p>
+    </header>
 
-  <header>
-    <h1>VAKERLIS MIKE</h1>
-    <p>Module/SoC Functional Verification Services</p>
-  </header>
+    <section>
+      <h2>What We Offer</h2>
+      <p>We specialize in:</p>
+      <ul>
+        <li>UVM Testbench components development, integration & maintenance</li> 
+        <li>VIP development, integration & debugging</li> 
+        <li>Functional & code coverage regression analysis</li> 
+        <li>Constrained-random test and sequence development</li> 
+        <li>SystemVerilog Assertions (SVAs) implementation</li> 
+        <li>Gate-level simulation (GLS) & timing analysis</li> 
+        <li>Formal Interconnectivity Verification</li> 
+        <li>Proven experience in SPI-based chips & Arm-Core multi-IP platforms</li> 
+      </ul> 
+    </section>
 
-  <section>
-    <h2>What we offer</h2>
-    <ul>
-      <li><strong>UVM Testbench components development, integration & maintenance</strong></li>
-      <li><strong>VIP development, integration & debugging</strong></li>
-      <li><strong>Functional & code coverage regression analysis</strong></li>
-      <li><strong>Constrained-random test and sequence development</strong></li>
-      <li><strong>SystemVerilog Assertions (SVAs) implementation</strong></li>
-      <li><strong>Gate-level simulation (GLS) & timing analysis</strong></li>
-      <li><strong>Formal Interconnectivity Verification</strong></li>
-      <li><strong>Proven experience in SPI-based chips & Arm-Core multi-IP platforms</strong></li>
-    </ul>
-  </section>
+    <section class="finance">
+      <h2>Οικονομικά στοιχεία εταιρείας</h2>
+      <ul>
+        <li>📄 <a class="file-link" href="myfile2025.pdf" target="_blank">Αρχείο 2025</a></li>
+        <li>📄 <a class="file-link" href="myfile2024.pdf" target="_blank">Αρχείο 2024</a></li>
+      </ul>
+    </section>
 
-  <section class="small-section">
-    <h2>Οικονομικά στοιχεία εταιρείας</h2>
-    <p>Εδώ μπορείτε να βρείτε παραδείγματα οικονομικών στοιχείων και αρχεία που ανεβάζει η εταιρεία σε τακτική βάση, όπως:</p>
-    <ul class="file-list">
-      <li>example-financial-report-2024.pdf</li>
-      <li>example-income-statement.xlsx</li>
-      <li>example-budget-plan.docx</li>
-    </ul>
-    <p>Μπορείτε να αντικαταστήσετε αυτά τα παραδείγματα με τα δικά σας αρχεία.</p>
-  </section>
-
-  <footer>
-    &copy; 2025 VAKERLIS MIKE — All rights reserved.
-  </footer>
-
+    <footer>© 2025 My Company Name. All Rights Reserved.</footer>
+  </div>
 </body>
 </html>
